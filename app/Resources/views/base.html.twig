@@ -15,14 +15,16 @@
     <link rel="icon" type="image/jpg" href="{{ asset('favicon.jpg') }}"/>
 </head>
 <body>
-{% block body %}{% endblock %}
+<div class="container layout">
+    {% block body %}{% endblock %}
+</div>
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <address>
+                <address class="no-m-bottom">
                     Pol. Ind. Tosses C. Berlín, 1 · 43870 Amposta · Tarragona<br>
-                    <i class="fa fa-phone" aria-hidden="true"></i> 977 70 18 68<br>
+                    <span class="c-red"><i class="fa fa-phone" aria-hidden="true"></i> 977 70 18 68<br></span>
                     <a href="mailto:info@teicar.com">info@teicar.com</a>
                 </address>
             </div>

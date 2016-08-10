@@ -22,9 +22,19 @@
 
 // Customs
 .no-m-top { margin-top: 0 }
+.no-m-bottom { margin-bottom: 0 }
+.c-red { color: @red; }
+.container.layout { min-height: 500px; }
 
 // Footer
 footer {
   background-color: @black;
   color: @white;
+  padding: 40px 0;
+  a {
+    color: @white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
