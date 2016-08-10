@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Teicar">
+    <meta name="description" content="Teicar carroceries">
     <meta name="author" content="www.flux.cat">
-    <title>{% block title %}Teicar{% endblock %}</title>
+    <title>{% block title %}Teicar carroceries{% endblock %}</title>
     {% block stylesheets %}
         {% stylesheets filter='cssrewrite,less' '@mycss' %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url }}"/>
         {% endstylesheets %}
     {% endblock %}
-    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"/>
+    <link rel="icon" type="image/jpg" href="{{ asset('favicon.jpg') }}"/>
 </head>
 <body>
 {% block body %}{% endblock %}
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
                 <address>
-                    C. Jardí, 5<br>
-                    43870 Amposta<br>
-                    (Tarragona)<br>
+                    Pol. Ind. Tosses C. Berlín, 1 · 43870 Amposta · Tarragona<br>
+                    <i class="fa fa-phone" aria-hidden="true"></i> 977 70 18 68<br>
+                    <a href="mailto:info@teicar.com">info@teicar.com</a>
                 </address>
-                <h5><i class="fa fa-phone" aria-hidden="true"></i> </h5>
-                <p><a href="mailto:"></a></p>
             </div>
         </div>
     </div>
