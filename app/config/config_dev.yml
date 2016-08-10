@@ -37,4 +37,4 @@ cypress_git_elephant:
     enable_profiler: false
     profiler_repository_path: "%kernel.root_dir%/../"
     repositories:
-        "LaLlavor": "%kernel.root_dir%/../"
+        "Teicar": "%kernel.root_dir%/../"

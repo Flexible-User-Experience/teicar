@@ -1,6 +1,6 @@
 {
-    "name": "flux/la-llavor",
-    "description": "La Llavor Symfony 2 Website",
+    "name": "flux/teicar",
+    "description": "Teicar Symfony 2 Website",
     "license": "proprietary",
     "type": "project",
     "autoload": {

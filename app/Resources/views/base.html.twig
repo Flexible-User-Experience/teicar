@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="La Llavor Centre Ioga i Teràpia Gestalt Amposta">
+    <meta name="description" content="Teicar">
     <meta name="author" content="www.flux.cat">
-    <title>{% block title %}La Llavor{% endblock %}</title>
+    <title>{% block title %}Teicar{% endblock %}</title>
     {% block stylesheets %}
         {% stylesheets filter='cssrewrite,less' '@mycss' %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url }}"/>
@@ -16,6 +16,9 @@
 </head>
 <body>
 {% block body %}{% endblock %}
+<footer>
+
+</footer>
 {% block javascripts %}
     {% javascripts '@myjs' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
