@@ -2,23 +2,29 @@
 @import "../../../../../vendor/twbs/bootstrap/less/bootstrap.less";
 @import "../../../../../vendor/components/font-awesome/less/font-awesome.less";
 
-// Variables
-@blue-dark:   #08122F;
-@blue-light:  #2D7477;
-@cream-dark:  #B5AE7F;
-@cream-light: #D2CCA9;
+// Colors
+@red:         #FF0000;
 @white:       #FFFFFF;
 @grey:        #888888;
 @black:       #222222;
-@gap-big: @gap-normal * 2;
+
+// Variables
+@gap-big:    @gap-normal * 2;
 @gap-normal: 20px;
-@gap-small: @gap-normal / 2;
+@gap-small:  @gap-normal / 2;
 @c-font-size-base:  16px;
 @c-font-size-large: ceil((@font-size-base * 1.25));
 @c-font-size-small: ceil((@font-size-base * 0.95));
 
 // Fonts
 @icon-font-path: "/bundles/app/fonts/";
-@fa-font-path: "/bundles/app/fonts";
+@fa-font-path:   "/bundles/app/fonts";
 
+// Customs
 .no-m-top { margin-top: 0 }
+
+// Footer
+footer {
+  background-color: @black;
+  color: @white;
+}
