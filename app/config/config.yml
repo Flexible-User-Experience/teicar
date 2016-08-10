@@ -30,7 +30,7 @@ twig:
     globals:
         google_analytics_enabled: "%google_analytics_enabled%"
         google_analytics_account: "%google_analytics_account%"
-        admin_tag_version:        "v0.0.04"
+        admin_tag_version:        "v0.0.01"
 
 # Doctrine
 doctrine:
