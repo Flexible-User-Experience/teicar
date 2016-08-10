@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Teicar carroceries">
+    <meta name="description" content="Teicar carrosseries">
     <meta name="author" content="www.flux.cat">
-    <title>{% block title %}Teicar carroceries{% endblock %}</title>
+    <title>{% block title %}Teicar carrosseries{% endblock %}</title>
     {% block stylesheets %}
         {% stylesheets filter='cssrewrite,less' '@mycss' %}
         <link rel="stylesheet" type="text/css" href="{{ asset_url }}"/>
@@ -17,7 +17,7 @@
 <body>
 <div class="container layout">
     {% block body %}{% endblock %}
-    <div class="row">
+    <div class="row extra-m-top">
         <div class="col-md-12">
             <img class="img-responsive center-block" src="{{ asset('bundles/app/img/icons.jpg') }}" alt="Teicar icons">
         </div>
@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <address class="no-m-bottom">
-                    Pol. Ind. Tosses C. Berlín, 1 · 43870 Amposta · Tarragona<br>
+                    Pol. Ind. Tosses · C. Berlín, 1 · 43870 Amposta · Tarragona<br>
                     <span class="c-red"><i class="fa fa-phone" aria-hidden="true"></i> 977 70 18 68<br></span>
                     <a class="underlined" href="mailto:info@teicar.com">info@teicar.com</a><br><br>
                     <a href="https://www.facebook.com/teicarcarrosseries" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
