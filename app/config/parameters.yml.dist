@@ -15,6 +15,9 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
+    delivery_address:     your@email.com
+    delivery_address_dev: your_dev@email.com
+
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
