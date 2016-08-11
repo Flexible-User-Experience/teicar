@@ -31,7 +31,7 @@ class DefaultController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
             $this->addFlash(
                 'notice',
-                'Tot s\'ha enviat correctament. Et respondrem el més aviat possible. Gràcies.'
+                'Missatge enviat correctament, respondrem el més aviat possible. Gràcies.'
             );
         }
 

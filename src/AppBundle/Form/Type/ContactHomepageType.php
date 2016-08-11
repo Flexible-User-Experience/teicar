@@ -31,7 +31,7 @@ class ContactHomepageType extends AbstractType
                     'label'    => false,
                     'required' => true,
                     'attr'     => array(
-                        'placeholder' => 'Nom',
+                        'placeholder' => 'Nom *',
                     ),
                 )
             )
@@ -42,7 +42,7 @@ class ContactHomepageType extends AbstractType
                     'label'    => false,
                     'required' => true,
                     'attr'     => array(
-                        'placeholder' => 'Email',
+                        'placeholder' => 'Email *',
                     ),
                 )
             )
