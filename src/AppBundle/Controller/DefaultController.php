@@ -2,8 +2,10 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\Type\ContactHomepageType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class DefaultController
@@ -16,10 +18,25 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
+     *
+     * @param Request $request
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig');
+        $form = $this->createForm(ContactHomepageType::class);
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->addFlash(
+                'notice',
+                'Tot s\'ha enviat correctament. Et respondrem el més aviat possible. Gràcies.'
+            );
+        }
+
+        return $this->render('default/index.html.twig', array(
+            'form' => $form->createView(),
+        ));
     }
 }
