@@ -18,7 +18,6 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
-     *
      * @param Request $request
      *
      * @return \Symfony\Component\HttpFoundation\Response
@@ -29,14 +28,31 @@ class DefaultController extends Controller
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            // Flash
             $this->addFlash(
                 'notice',
                 'Missatge enviat correctament, respondrem el més aviat possible. Gràcies.'
             );
+            // Email
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Missatge de contacte pàgina web www.teicar.com')
+                ->setFrom($this->getParameter('delivery_address'))
+                ->setTo($this->getParameter('delivery_address'))
+                ->setBody(
+                    $this->renderView(
+                        'mail/contact_form_admin_notification.html.twig',
+                        array('contact' => $form->getData())
+                    ),
+                    'text/html'
+                );
+            $this->get('mailer')->send($message);
         }
 
-        return $this->render('default/index.html.twig', array(
-            'form' => $form->createView(),
-        ));
+        return $this->render(
+            'default/index.html.twig',
+            array(
+                'form' => $form->createView(),
+            )
+        );
     }
 }
