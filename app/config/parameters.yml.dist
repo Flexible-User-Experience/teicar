@@ -26,6 +26,6 @@ parameters:
 
     assetic_path_java:         /usr/bin/java
     assetic_path_node:         /usr/bin/nodejs
-    assetic_path_node_modules: /home/<user>/node_modules
+    assetic_path_node_modules: /usr/local/lib/node_modules
 
     locale: ca
