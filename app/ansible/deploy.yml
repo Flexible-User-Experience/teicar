@@ -24,7 +24,7 @@
     ansistrano_git_repo: "git@github.com:Flexible-User-Experience/teicar.git"
     ansistrano_git_branch: "master"
     # ansistrano hooks
-    ansistrano_after_cleanup_tasks_file: "{{ playbook_dir }}/after-cleanup-tasks.yml"
+    ansistrano_after_cleanup_tasks_file: "{{ playbook_dir }}/hooks/after-cleanup-tasks.yml"
     # symfony config
     symfony_console_path: "app/console"
     symfony_run_composer: true
