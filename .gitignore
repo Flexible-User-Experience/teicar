@@ -50,6 +50,10 @@
 # Composer PHAR
 /composer.phar
 
+# Ansible
+/app/ansible/config.yml
+/app/ansible/parameters_prod.yml
+
 # Customs
 /dbreset.sh
 /test.sh
