@@ -24,7 +24,7 @@
     ansistrano_git_repo: "git@github.com:Flexible-User-Experience/teicar.git"
     ansistrano_git_branch: "master"
     # ansistrano hooks
-    ansistrano_after_cleanup_tasks_file: "{{ playbook_dir }}/hooks/after-cleanup-tasks.yml"
+    ansistrano_before_symlink_shared_tasks_file: "{{ playbook_dir }}/hooks/before-symlink-tasks.yml"
     # symfony config
     symfony_console_path: "app/console"
     symfony_run_composer: true
@@ -32,6 +32,6 @@
     symfony_composer_options: "--no-dev --optimize-autoloader --no-interaction"
     symfony_composer_self_update: false
     symfony_run_assets_install: true
-    symfony_run_assetic_dump: false
+    symfony_run_assetic_dump: true
     symfony_run_cache_clear_and_warmup: true
     symfony_run_doctrine_migrations: false
