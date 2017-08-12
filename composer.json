@@ -26,6 +26,7 @@
         "components/font-awesome": "^4.0",
         "components/jquery": "^2.0",
         "cypresslab/gitelephant-bundle": "^0.0.6",
+        "excelwebzone/recaptcha-bundle": "^1.4",
         "egulias/email-validator": "^1.2",
         "ircmaxell/password-compat": "~1.0",
         "twbs/bootstrap": "^3.0",
