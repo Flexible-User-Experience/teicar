@@ -29,3 +29,6 @@ parameters:
     assetic_path_node_modules: /usr/local/lib/node_modules
 
     locale: ca
+
+    recaptcha_site_key: ""
+    recaptcha_secret: ""

@@ -81,3 +81,11 @@ assetic:
             inputs:
                 - "%kernel.root_dir%/../vendor/components/jquery/jquery.js"
                 - "%kernel.root_dir%/../vendor/twbs/bootstrap/dist/js/bootstrap.js"
+
+# Google reCaptcha
+ewz_recaptcha:
+    public_key:  "%recaptcha_site_key%"
+    private_key: "%recaptcha_secret%"
+    locale_key:  "%locale%"
+    enabled:     true
+    ajax:        false

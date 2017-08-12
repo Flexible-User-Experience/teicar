@@ -19,6 +19,8 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             // Sensio
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            // Vendors
+            new EWZ\Bundle\RecaptchaBundle\EWZRecaptchaBundle(),
             // App
             new AppBundle\AppBundle(),
         );
