@@ -2,6 +2,8 @@
 
 namespace AppBundle\Form\Type;
 
+use EWZ\Bundle\RecaptchaBundle\Form\Type\EWZRecaptchaType;
+use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrue as RecaptchaTrue;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -69,6 +71,16 @@ class ContactHomepageType extends AbstractType
                 )
             )
             ->add(
+                'recaptcha',
+                EWZRecaptchaType::class,
+                array(
+                    'label' => ' ',
+                    'constraints' => array(
+                        new RecaptchaTrue(),
+                    )
+                )
+            )
+            ->add(
                 'send',
                 SubmitType::class,
                 array(
@@ -77,7 +89,8 @@ class ContactHomepageType extends AbstractType
                         'class' => 'btn-danger',
                     ),
                 )
-            );
+            )
+        ;
     }
 
     /**
