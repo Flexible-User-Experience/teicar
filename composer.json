@@ -13,28 +13,28 @@
         ]
     },
     "require": {
-        "php": ">=7.1.0",
-        "symfony/symfony": "2.8.*",
-        "doctrine/orm": "^2.4.8",
-        "doctrine/doctrine-bundle": "~1.4",
-        "symfony/swiftmailer-bundle": "~2.3",
-        "symfony/monolog-bundle": "~2.4",
-        "symfony/assetic-bundle": "^2.7",
-        "sensio/distribution-bundle": "~5.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0",
         "components/font-awesome": "^4.0",
         "components/jquery": "^2.0",
-        "cypresslab/gitelephant-bundle": "^0.0.6",
-        "excelwebzone/recaptcha-bundle": "^1.4",
+        "doctrine/doctrine-bundle": "~1.4",
+        "doctrine/orm": "^2.4.8",
         "egulias/email-validator": "^1.2",
+        "excelwebzone/recaptcha-bundle": "^1.4",
+        "incenteev/composer-parameter-handler": "~2.0",
         "ircmaxell/password-compat": "~1.0",
+        "php": ">=7.1.0",
+        "sensio/distribution-bundle": "~5.0",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "symfony/assetic-bundle": "^2.7",
+        "symfony/monolog-bundle": "~2.4",
+        "symfony/swiftmailer-bundle": "~2.3",
+        "symfony/symfony": "2.8.*",
         "twbs/bootstrap": "^3.0",
         "twig/twig": "^2.0"
     },
     "require-dev": {
-        "sensio/generator-bundle": "~3.0",
-        "phpunit/phpunit": "^5.0"
+        "cypresslab/gitelephant-bundle": "^0.0.6",
+        "phpunit/phpunit": "^5.0",
+        "sensio/generator-bundle": "~3.0"
     },
     "scripts": {
         "post-install-cmd": [
